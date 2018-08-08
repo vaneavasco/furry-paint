@@ -3,15 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <script src="./main.js" type="module"></script>
+    <link rel="stylesheet" type="text/css" href="./main.css">
     <title>Paint</title>
 </head>
 <body>
-    <div>
+    <div id="config">
         <label for="width">Grid width: </label><input type="text" id="width" name="width" value="30"/>
         <label for="height">Grid height: </label><input type="text" id="height" name="height" value="30"/>
         <button id="init">Draw grid</button>
     </div>
     <div id="color-picker"></div>
-    <div id="root"></div>
+    <div id="grid"></div>
 </body>
 </html>

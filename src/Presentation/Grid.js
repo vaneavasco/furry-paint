@@ -17,7 +17,7 @@ class Grid {
             x: i,
             y: j,
           }),
-          cell,
+          cell
         );
       }
     }
@@ -27,12 +27,7 @@ class Grid {
 
   createCell(i, j) {
     const cell = document.createElement('div');
-    cell.setAttribute('style', `width:${this.cellSize}px; height: ${this.cellSize}px; float:left`);
-    cell.setAttribute('data-position', JSON.stringify({
-      x: i,
-      y: j,
-    }));
-    cell.setAttribute('class', 'grid-cell');
+    cell.classList.add('cell');
 
     return cell;
   }

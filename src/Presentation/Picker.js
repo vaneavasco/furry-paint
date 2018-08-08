@@ -10,8 +10,7 @@ class Picker {
     const colors = this.picker.availableColors;
     colors.forEach((color) => {
       const cell = document.createElement('div');
-      cell.setAttribute('style',
-        `width:${this.cellSize}px; height: ${this.cellSize}px; float:left`);
+      cell.classList.add('cell');
       cell.style.backgroundColor = color;
       this.colorCels.set(color, cell);
       this.rootElement.append(cell);
@@ -22,8 +21,7 @@ class Picker {
 
   drawCurrentColor() {
     const cell = document.createElement('div');
-    cell.setAttribute('style',
-      `width:${2*this.cellSize}px; height: ${2 * this.cellSize}px; float:left`);
+    cell.classList.add('current');
     cell.style.backgroundColor = this.picker.color;
     this.rootElement.append(cell);
     this.currentColorCell = cell;

@@ -9,8 +9,8 @@ class Paint {
     this.grid.paint(x, y, this.picker.color);
   }
 
-  pickColor(color) {
-    this.picker.color = color;
+  changeColor(color) {
+    this.picker.changeColor(color);
   }
 }
 

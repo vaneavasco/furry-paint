@@ -1,0 +1,32 @@
+#grid {
+    border: solid 1px #000000;
+    display: none;
+}
+
+#grid .cell {
+    width: 30px;
+    height: 30px;
+    float: left;
+}
+
+#color-picker {
+    border: solid 1px #000000;
+    display: none;
+    margin-bottom: 10px;
+}
+
+#color-picker .cell {
+    width: 30px;
+    height: 30px;
+    float: left;
+}
+
+#color-picker .current {
+    width: 60px;
+    height: 60px;
+    float: left;
+}
+
+#config {
+    padding: 5px 5px;
+}
